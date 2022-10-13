@@ -1,0 +1,24 @@
+version: "3.1"
+services:
+  bff:
+    image: node:16
+    volumes:
+      - ./bff:/repo
+    working_dir: /repo
+    tty: true
+    networks:
+      - network
+    ports:
+      - 9000:9000
+  backend:
+    image: node:16
+    volumes:
+      - ./backend:/repo
+    working_dir: /repo
+    tty: true
+    networks:
+      - network
+    ports:
+      - 10000:10000
+networks:
+  network:
