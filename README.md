@@ -7,3 +7,7 @@
 - `confg.ts`が抜けていたので、追加した。
 - `GreeterClient`の options である`grpcClientOptions`に何を入れるべきかわからなかったので、削除して確認した。
 - コンテナを分けて試してみた。
+
+# TODO
+
+- `package.json`をもうちょい綺麗にする
